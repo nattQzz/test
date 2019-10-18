@@ -1,0 +1,22 @@
+public class StringDemo02 {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("world");
+        String str = sb.toString();
+
+        StringBuilder sb2 = sb.append("hello");
+        System.out.println(sb == sb2);
+
+        sb.delete(1,4);
+        sb.deleteCharAt(1);
+
+        sb.insert(2,"it");
+        sb.replace(1,4,"java");
+        sb.reverse();
+
+        sb.length();
+        sb.charAt(0);
+        sb.indexOf("java",5);
+    }
+
+}
