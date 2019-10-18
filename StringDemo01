@@ -1,0 +1,30 @@
+public class StringDemo01 {
+    public static void main(String[] args) {
+        String s1 = "Hello World!";
+        String s2 = "Hello World1";
+        String s3 = new String("Hello World!");
+
+        System.out.println(s1==s2);
+        System.out.println(s1==s3);
+
+        System.out.println(s1.equals(s3));
+
+        byte[] bytes ={12,13,14,15,16};
+
+        String str1 = new String(bytes);
+        String str2 = new String(bytes,1,2);
+
+        byte[] bytes1 = str1.getBytes();
+
+        char[] ch ={'中','q','c'};
+
+        String s5 = new String(ch);
+        String s6 = new String(ch,1 ,2);
+
+        char[] chs = s1.toCharArray();
+
+
+
+    }
+
+}
